@@ -1,3 +1,4 @@
+import Notes from "../../Notes/Notes";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -25,7 +26,9 @@ export default function Home() {
                         </div>
                         <p>Bookmarks</p>
                     </div>
+                    
                 </div>
+                <Notes />
             </div>
         </div>
     );

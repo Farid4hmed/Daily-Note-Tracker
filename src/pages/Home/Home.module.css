@@ -13,12 +13,11 @@
 .container {
     height: 82%;
     width: 65%;
-    background-color: whitesmoke;
-    opacity: 75%;
+    background-color: blue;
+    opacity: 89%;
     display: flex;
-    justify-content: left;
+    align-items: center;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-
 }
 
 .toggle {
@@ -32,7 +31,7 @@
 }
 
 .titleBar {
-    height: 9%;
+    height: 10%;
     width: 100%;
     background-color: #3DA577;
     display: flex;
