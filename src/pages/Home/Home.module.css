@@ -1,0 +1,115 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+.parent {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./mountains.png');
+    background-size: 100% 101.43%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 82%;
+    width: 65%;
+    background-color: whitesmoke;
+    opacity: 75%;
+    display: flex;
+    justify-content: left;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+
+.toggle {
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
+}
+
+.titleBar {
+    height: 9%;
+    width: 100%;
+    background-color: #3DA577;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleBar p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding-right: 5%;
+    font-weight: 600;
+}
+
+.titleBar img {
+    height: 50%;
+    width: 10.5%;
+    padding-right: 5%;
+
+}
+
+.notes {
+    height: 9%;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.circle1 {
+    margin-left: 7%;
+    width: 42.01px;
+    height: 42.01px;
+    border-radius: 50%;
+    background-color: #806BFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes svg {
+    margin-left: 7%;
+}
+
+.notes p{
+    font-family: 'Montserrat', sans-serif;
+    color: #806BFF;
+    font-weight: 500;
+    margin-left: 4%;
+}
+
+.links {
+    height: 9%;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.links p{
+    font-family: 'Montserrat', sans-serif;
+    color: #FF6B6B;
+    font-weight: 500;
+    margin-left: 4%;
+}
+
+.circle2 {
+    margin-left: 7%;
+    width: 42.01px;
+    height: 42.01px;
+    border-radius: 50%;
+    background-color: #FF6B6B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links svg {
+    margin-left: 7%;
+}
