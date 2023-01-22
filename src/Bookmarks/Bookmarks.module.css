@@ -5,14 +5,12 @@
     border-radius: 5px;
     margin-top: 15px;
     word-wrap: break-word;
-}
-
-.container p{
-    padding: 2% 2% 2%;
+    padding: 4% 2% 2%;
 }
 
 .date{
-    margin-left: 73%;
+    position: relative;
+    margin-left: 77%;
     font-size: smaller;
     color: gray;
 }

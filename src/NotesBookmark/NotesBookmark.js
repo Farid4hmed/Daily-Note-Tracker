@@ -10,17 +10,17 @@ export default function NotesBookmark(){
             return JSON.parse(localStorage.getItem("bookmarks"));
         }
     }
-    const [notesArr, setNotesArr] = useState(getLocalItems() || []);
+    const [bookmarkArr, setBookmarkArr] = useState(getLocalItems() || []);
 
-    function createNote(note){
-        return <Bookmarks text={note.text} time={note.time} />
+    function createBookmark(bookmark){
+        return <Bookmarks text={bookmark.text} time={bookmark.time} />
     }
     return (
         <div className={styles.bookmark}>
         <div className={styles.bookmarkList}>
-        {notesArr.map(createNote)}
+        {bookmarkArr.map(createBookmark)}
         </div>
-        <InputBookmarks notesArr={notesArr} setNotesArr={setNotesArr} />
+        <InputBookmarks bookmarkArr={bookmarkArr} setBookmarkArr={setBookmarkArr} />
         </div>
     );
 }

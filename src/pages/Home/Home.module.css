@@ -4,7 +4,7 @@
     width: 100vw;
     height: 100vh;
     background-image: url('./mountains.png');
-    background-size: 100% 101.43%;
+    background-size: 100% 102%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
     height: 82%;
     width: 65%;
     background-color: blue;
-    opacity: 89%;
+    opacity: 90%;
     display: flex;
     align-items: center;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -31,9 +31,9 @@
 }
 
 .titleBar {
-    height: 10%;
+    height: 11%;
     width: 100%;
-    background-color: #3DA577;
+    background-color: rgb(59, 59, 235);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,8 +47,8 @@
 }
 
 .titleBar img {
-    height: 50%;
-    width: 10.5%;
+    height: 45%;
+    width: 11%;
     padding-right: 5%;
 
 }

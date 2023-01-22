@@ -1,9 +1,10 @@
 import styles from "./Bookmarks.module.css";
 
 export default function Bookmarks(props){
+    const link = `https://${props.text}`;
     return (
         <div className={styles.container}>
-            <p>{props.text}</p>
+            <a href={link} target="_blank">{props.text}</a>
             <p className={styles.date}>{props.time}</p>
         </div>
     );

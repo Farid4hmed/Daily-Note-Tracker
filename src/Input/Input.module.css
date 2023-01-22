@@ -23,14 +23,14 @@
     width: 35.01px;
     height: 35.01px;
     border-radius: 50%;
-    background-color: #3DA577;
+    background-color: rgb(59, 59, 235);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .circle:hover{
-    background-color: #05a15b;
+    background-color: rgb(82, 82, 250);
 }
 
 .input button{

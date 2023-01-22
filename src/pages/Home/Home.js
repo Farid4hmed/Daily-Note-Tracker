@@ -40,7 +40,7 @@ export default function Home() {
                     </div>
                     
                 </div>
-                {flag? <Notes/> :<NotesBookmark />}
+                {!flag? <Notes/> :<NotesBookmark />}
                 
             </div>
         </div>
