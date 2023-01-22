@@ -1,0 +1,18 @@
+.container{
+    width: 90%;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    word-wrap: break-word;
+}
+
+.container p{
+    padding: 2% 2% 2%;
+}
+
+.date{
+    margin-left: 73%;
+    font-size: smaller;
+    color: gray;
+}

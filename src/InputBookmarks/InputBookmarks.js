@@ -1,15 +1,15 @@
 import { useState } from "react";
-import styles from "./Input.module.css";
+import styles from "./InputBookmarks.module.css";
 
 
-export default function Input(props) {
+export default function InputBookmarks(props) {
     const [text, setText] = useState("");
 
     function handleSubmit() {
         const d = new Date();
         props.notesArr.push({ text: text, time: d.toLocaleString()});
         props.setNotesArr([...props.notesArr]);
-        localStorage.setItem("notes", JSON.stringify(props.notesArr));
+        localStorage.setItem("bookmarks", JSON.stringify(props.notesArr));
         document.getElementById("inputField").value = "";
     }
 
@@ -18,7 +18,7 @@ export default function Input(props) {
             const d = new Date();
             props.notesArr.push({ text: text, time: d.toLocaleString() });
             props.setNotesArr([...props.notesArr]);
-            localStorage.setItem("notes", JSON.stringify(props.notesArr));
+            localStorage.setItem("bookmarks", JSON.stringify(props.notesArr));
             document.getElementById("inputField").value = "";
         }
     }

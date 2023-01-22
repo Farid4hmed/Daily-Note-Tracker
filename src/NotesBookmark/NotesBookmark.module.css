@@ -1,4 +1,4 @@
-.notes{
+.bookmark{
     background-color: whitesmoke;
     height: 100%;
     width: 70%;
@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 
-.dailyNotes{
+.bookmarkList{
     height: 92%;
     width: 100%;
     display: flex;
