@@ -7,19 +7,21 @@ export default function InputBookmarks(props) {
 
     function handleSubmit() {
         const d = new Date();
-        props.bookmarkArr.push({ text: text, time: d.toLocaleString()});
+        if(text!=="")props.bookmarkArr.push({ text: text, time: d.toLocaleString("en-US")});
         props.setBookmarkArr([...props.bookmarkArr]);
         localStorage.setItem("bookmarks", JSON.stringify(props.bookmarkArr));
         document.getElementById("inputField2").value = "";
+        setText("");
     }
 
     function handleKey(event) {
         if (event.key === 'Enter') {
             const d = new Date();
-            props.bookmarkArr.push({ text: text, time: d.toLocaleString() });
+            if(text!=="")props.bookmarkArr.push({ text: text, time: d.toLocaleString("en-US")});
             props.setBookmarkArr([...props.bookmarkArr]);
             localStorage.setItem("bookmarks", JSON.stringify(props.bookmarkArr));
             document.getElementById("inputField2").value = "";
+            setText("");
         }
     }
 

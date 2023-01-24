@@ -13,7 +13,8 @@ export default function Notes(){
     const [notesArr, setNotesArr] = useState(getLocalItems() || []);
 
     function createNote(note){
-        return <DailyNote text={note.text} time={note.time} />
+        var idx = notesArr.indexOf(note);
+        return <DailyNote text={note.text} time={note.time} setNotesArr={setNotesArr} notesArr={notesArr} idx={idx}/>
     }
     return (
         <div className={styles.notes}>

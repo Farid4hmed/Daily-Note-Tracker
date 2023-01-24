@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Input.module.css";
 
 
@@ -7,19 +7,21 @@ export default function Input(props) {
 
     function handleSubmit() {
         const d = new Date();
-        props.notesArr.push({ text: text, time: d.toLocaleString()});
+        if(text!=="")props.notesArr.push({ text: text, time: d.toLocaleString("en-US")});
         props.setNotesArr([...props.notesArr]);
         localStorage.setItem("notes", JSON.stringify(props.notesArr));
         document.getElementById("inputField1").value = "";
+        setText("");
     }
 
     function handleEnterKey(event) {
         if (event.key === 'Enter') {
             const d = new Date();
-            props.notesArr.push({ text: text, time: d.toLocaleString() });
+            if(text!=="")props.notesArr.push({ text: text, time: d.toLocaleString("en-US")});
             props.setNotesArr([...props.notesArr]);
             localStorage.setItem("notes", JSON.stringify(props.notesArr));
             document.getElementById("inputField1").value = "";
+            setText("");
         }
     }
 

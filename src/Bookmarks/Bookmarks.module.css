@@ -5,12 +5,31 @@
     border-radius: 5px;
     margin-top: 15px;
     word-wrap: break-word;
-    padding: 4% 2% 2%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .date{
     position: relative;
-    margin-left: 77%;
+    margin-left: 75%;
+    margin-bottom: 2%;
     font-size: smaller;
     color: gray;
+}
+
+.button{
+    border-radius: 30%;
+    margin-left: 95.5%;
+    margin-top: 2.5%;
+    width: 30px;
+    height: 20px;
+    background-color: white;
+    border-style: none;
+}
+button:hover{
+    background-color: whitesmoke;
+}
+.dustbin{
+    height: 100%;
+    width: 100%;
 }

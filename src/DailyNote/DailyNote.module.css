@@ -5,14 +5,39 @@
     border-radius: 5px;
     margin-top: 15px;
     word-wrap: break-word;
+    padding-left: 2%;
 }
 
-.container p{
-    padding: 2% 2% 2%;
+.noteStyle{
+    margin-top: 0%;
+    margin-bottom: 2%;
 }
 
 .date{
+    margin-bottom: 0;
+    margin-top: 0;
     margin-left: 73%;
+    margin-bottom: 1.5%;
     font-size: smaller;
     color: gray;
+}
+
+.dustbin{
+    height: 100%;
+    width: 100%;
+}
+
+.button{
+    border-radius: 30%;
+    margin-left: 93%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    width: 30px;
+    height: 20px;
+    background-color: white;
+    border-style: none;
+    position: relative;
+}
+button:hover{
+    background-color: whitesmoke;
 }

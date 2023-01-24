@@ -13,7 +13,8 @@ export default function NotesBookmark(){
     const [bookmarkArr, setBookmarkArr] = useState(getLocalItems() || []);
 
     function createBookmark(bookmark){
-        return <Bookmarks text={bookmark.text} time={bookmark.time} />
+        const idx = bookmarkArr.indexOf(bookmark);
+        return <Bookmarks text={bookmark.text} time={bookmark.time} idx={idx} bookmarkArr={bookmarkArr} setBookmarkArr={setBookmarkArr}/>
     }
     return (
         <div className={styles.bookmark}>
